@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процессоры: Всё о главном</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0e7ff, #f3f4f6);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1e3a8a;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(120deg, #93c5fd, #1d4ed8);
+            color: white;
+            animation: gradient-move 6s infinite alternate;
+        }
+
+        @keyframes gradient-move {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin: 0;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin: 40px 0;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3a8a;
+            color: white;
+            font-size: 16px;
+        }
+
+        .animated-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+            background: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Процессоры: Гид по современным технологиям</h1>
+    </header>
+
+    <nav>
+        <a href="#about">О процессорах</a>
+        <a href="#types">Типы процессоров</a>
+        <a href="#future">Будущее</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Процессоры: мозг современных устройств</h1>
+        <p>Исследуйте архитектуру, типы и будущее процессоров!</p>
+        <a class="animated-button" href="#about">Начать</a>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>Что такое процессор?</h2>
+            <p>Процессор выполняет ключевую роль в обработке данных, выполняя миллионы операций в секунду. Он управляет всеми задачами вашего устройства и обеспечивает производительность.</p>
+            <p>Эволюция процессоров началась с простых одноядерных моделей, а сегодня мы видим мощные многоядерные системы.</p>
+            <ul>
+                <li>Архитектура процессора: основа его функциональности.</li>
+                <li>Кэш-память: ускоряет доступ к данным.</li>
+                <li>Частота работы: измеряется в гигагерцах (ГГц).</li>
+            </ul>
+        </section>
+
+        <section id="types">
+            <h2>Типы процессоров</h2>
+            <ul>
+                <li><strong>Десктопные:</strong> Intel Core, AMD Ryzen. Эти процессоры предназначены для настольных компьютеров и предоставляют высокую производительность для игр и работы.</li>
+                <li><strong>Серверные:</strong> Intel Xeon, AMD EPYC. Используются в серверах для обработки больших объемов данных.</li>
+                <li><strong>Мобильные:</strong> Snapdragon, Apple M-серии. Подходят для смартфонов и планшетов благодаря энергоэффективности.</li>
+                <li><strong>Специализированные:</strong> Графические процессоры (NVIDIA, AMD) и чипы AI, созданные для машинного обучения и работы с графикой.</li>
+            </ul>
+        </section>
+
+        <section id="future">
+            <h2>Будущее процессоров</h2>
+            <p>Развитие процессоров идет в направлении увеличения количества ядер, улучшения энергопотребления и внедрения квантовых вычислений. В будущем мы можем увидеть революцию в обработке данных благодаря графеновым и квантовым процессорам.</p>
+            <p>Основные направления:</p>
+            <ul>
+                <li>Квантовые вычисления.</li>
+                <li>Использование новых материалов, таких как графен.</li>
+                <li>Внедрение искусственного интеллекта прямо в архитектуру процессора.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Всё о процессорах. Все права защищены.</p>
+    </footer>
+</body>
+</html>
